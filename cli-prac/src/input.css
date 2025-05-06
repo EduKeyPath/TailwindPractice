@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .bg-yel-1 {
+    background-color: yellow;
+    padding: 30px;
+  }
+}
+
+body {
+  background-color: theme('colors.yellow.500');
+  padding: theme('spacing.2') theme('spacing.4');
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-full border border-purple-200 px-4 py-1 text-sm font-semibold text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-purple-600 focus:ring-offset-2;
+  }
+}
